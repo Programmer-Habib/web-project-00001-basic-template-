@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* style the body */
+body{
+    font-family: Arial;
+}
+.h2{
+    width: 100%;
+    background-color: yellow;
+}
+.h2 h2{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+/* header/logo title */
+.header{
+    width: 100%;
+    background-color: #1abc9c;
+    color: #fff;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.logo-title p{
+    margin-top: 15px;
+}
+/* Style the Navigation Bar links */
+.navber{
+    width: 100%;
+}
+.navber ul{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+}
+.navber ul li{
+    list-style-type: none;
+}
+.navber ul li a{
+    color: #fff;
+    padding: 14px 20px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+/* Change the color on hover */
+.navber ul li a:hover{
+    background-color: #ddd;
+    color: black;
+}
+/* The flexible gird content style */
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.side{
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.side h2{
+    margin-top: 20px;
+}
+.side h5{
+    margin-top: 20px;
+}
+.fakeimage{
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    background-color: #aaa;
+    padding: 20px;
+}
+.side p{
+    margin-top: 20px;
+}
+.side h3{
+    margin-top: 20px;
+}
+.fakeimg{
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    background-color: #aaa;
+    padding: 20px;
+}
+/* main style */
+.main{
+    flex: 70%;
+    background-color: #fff;
+    padding: 20px;
+}
+.main h2{
+    margin-top: 20px;
+}
+.main h5{
+    margin-top: 20px;
+}
+.mainfakeimg{
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+    background-color: #aaa;
+}
+.main p{
+    padding-top: 20px;
+}
+/* Footer */
+.footer{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+}
+@media screen and (max-width: 700px) {
+    .navber ul{
+        display: block;
+        overflow: hidden;
+        width: 100%;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+}
